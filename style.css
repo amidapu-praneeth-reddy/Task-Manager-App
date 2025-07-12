@@ -1,0 +1,136 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #c3f4f6, #f5d4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-container {
+  text-align: center;
+}
+
+.task-box {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 480px;
+}
+
+.task-box h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #333;
+  font-size: 1.6rem;
+}
+
+.task-box .highlight {
+  color: #0cbbe7;
+}
+
+.task-input {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.task-input button {
+  padding: 12px 18px;
+  background-color: #009eff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-input button:hover {
+  background-color: #007cd0;
+}
+
+ul#taskList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul#taskList li {
+  background: white;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+}
+
+ul#taskList li.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background-color: #20c997;
+  color: white;
+}
+
+.complete-btn:hover {
+  background-color: #17a67c;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+  font-size: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #d9363e;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.clear-btn {
+  background: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.clear-btn:hover {
+  background: #b02a37;
+}
